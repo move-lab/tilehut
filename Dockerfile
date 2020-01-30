@@ -19,6 +19,10 @@ COPY ./config.js /usr/src/app
 COPY ./server.js /usr/src/app
 COPY ./TileService.js /usr/src/app
 
+# Add flights2rome tiles
+RUN wget -O /usr/src/app/data/flights2rome-rides.mbtiles https://lab-tilehut-tiles.s3.amazonaws.com/flights2rome-rides.mbtiles
+RUN wget -O /usr/src/app/data/flights2rome-flights.mbtiles https://lab-tilehut-tiles.s3.amazonaws.com/flights2rome-flights.mbtiles
+
 # Create volume to mount tile data
 VOLUME [ "/usr/src/app/data" ]
 
