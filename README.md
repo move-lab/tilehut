@@ -1,5 +1,10 @@
 # Tilehut
 
+| PROD                                                                                                    |
+| ------------------------------------------------------------------------------------------------------- |
+| ![Build Status](https://bamboo.intapps.it/plugins/servlet/wittified/build-status/LAB-LABTILEHUTSERVICE) |
+| ![prod Deployment](https://bamboo.intapps.it/plugins/servlet/wittified/deploy-status/95978064)          |
+
 **Description**: see [README](./TILEHUT_README.md).
 
 Endpoints:
