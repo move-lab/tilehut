@@ -14,13 +14,13 @@ ports:
   - 8000
 ingress:
   hosts:
-    - host: 'tilehut-a.api.{{ env "bamboo_dev_host" }}'
+    - host: 'tilehut-a.api.{{ env "bamboo_deploy_host" }}'
       public: false
-    - host: 'tilehut-b.api.{{ env "bamboo_dev_host" }}'
+    - host: 'tilehut-b.api.{{ env "bamboo_deploy_host" }}'
       public: false
-    - host: 'tilehut-c.api.{{ env "bamboo_dev_host" }}'
+    - host: 'tilehut-c.api.{{ env "bamboo_deploy_host" }}'
       public: false
-    - host: 'tilehut-d.api.{{ env "bamboo_dev_host" }}'
+    - host: 'tilehut-d.api.{{ env "bamboo_deploy_host" }}'
       public: false
 autoscaling:
   min: 2
